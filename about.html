@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Site | GameHub</title>
+  <meta name="description" content="About GameHub, a browser game collection and cybersecurity portfolio project.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="GameHub home">
+      <span class="brand-mark">GH</span>
+      <span>GameHub</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#games">Games</a>
+      <a href="about.html" aria-current="page">About the Site</a>
+      <a href="index.html#roadmap">Roadmap</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="about-title">
+      <p class="eyebrow">About the site</p>
+      <h1 id="about-title">Games first, secure foundations underneath.</h1>
+      <p>
+        GameHub is a home for browser-based versions of games I like. It is also a long-term portfolio project for demonstrating practical secure web development as I work toward a cybersecurity role.
+      </p>
+    </section>
+
+    <section class="security-band" aria-labelledby="security-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Security posture</p>
+          <h2 id="security-title">Portfolio Topics To Showcase</h2>
+        </div>
+        <p>These are platform-level concerns that can grow alongside the game collection.</p>
+      </div>
+
+      <div class="security-list">
+        <div class="security-item">
+          <span class="security-number">01</span>
+          <div>
+            <h3>Authentication</h3>
+            <p>Login, registration, session management, password handling, and eventually multi-factor authentication.</p>
+          </div>
+        </div>
+        <div class="security-item">
+          <span class="security-number">02</span>
+          <div>
+            <h3>Authorization</h3>
+            <p>Clear boundaries for players, admins, private profile data, game ownership, and future moderation tools.</p>
+          </div>
+        </div>
+        <div class="security-item">
+          <span class="security-number">03</span>
+          <div>
+            <h3>Secure By Design</h3>
+            <p>Input validation, rate limits, defensive error handling, audit-friendly structure, and dependency hygiene.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-notes" aria-labelledby="approach-title">
+      <div>
+        <p class="section-kicker">Build approach</p>
+        <h2 id="approach-title">Separate the platform from the games.</h2>
+      </div>
+      <div class="note-list">
+        <p>General site work should stay focused on shared navigation, account flows, deployment, documentation, and security-sensitive architecture.</p>
+        <p>Each game can be built in its own focused pass, then integrated into the shared GameHub shell without turning the homepage into game-specific logic.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Juan Reyes as a web game and cybersecurity portfolio.</p>
+    <a href="index.html">Back home</a>
+  </footer>
+</body>
+</html>

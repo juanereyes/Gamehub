@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameHub | Secure Web Game Portfolio</title>
+  <meta name="description" content="A cybersecurity-minded web game hub for browser-based versions of favorite games.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="GameHub home">
+      <span class="brand-mark">GH</span>
+      <span>GameHub</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#games">Games</a>
+      <a href="about.html">About the Site</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Cybersecurity portfolio project</p>
+        <h1 id="hero-title">GameHub</h1>
+        <p class="hero-lede">
+          A browser-based collection of online games, built as a practical portfolio for secure web development, authentication, and application hardening.
+        </p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="#games">View game slots</a>
+          <a class="button secondary" href="about.html">About the site</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Cybersecurity themed game hub preview">
+        <img src="assets/cyber-game-hub-hero.png" alt="A secure game dashboard displayed across monitors in a cybersecurity operations room.">
+      </div>
+    </section>
+
+    <section class="section intro" aria-label="Project direction">
+      <div>
+        <p class="section-kicker">Project direction</p>
+        <h2>A home for games, with security treated as part of the product.</h2>
+      </div>
+      <p>
+        Each game can grow independently while the shared platform handles navigation, identity, user profiles, secure sessions, and future administrative tools.
+      </p>
+    </section>
+
+    <section class="section" id="games" aria-labelledby="games-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Library</p>
+          <h2 id="games-title">Planned Game Slots</h2>
+        </div>
+        <p>Placeholder entries for future builds. Each card can later become a live route, repo module, or deployment target.</p>
+      </div>
+
+      <div class="game-grid">
+        <article class="game-card">
+          <div class="card-topline">
+            <span class="status planned">Planned</span>
+            <span class="card-code">001</span>
+          </div>
+          <h3>Strategy Game</h3>
+          <p>Turn-based or real-time decision making, with room for matchmaking and account-based stats later.</p>
+        </article>
+
+        <article class="game-card">
+          <div class="card-topline">
+            <span class="status planned">Planned</span>
+            <span class="card-code">002</span>
+          </div>
+          <h3>Card Game</h3>
+          <p>A future space for deck state, multiplayer tables, rules validation, and clean client-server boundaries.</p>
+        </article>
+
+        <article class="game-card">
+          <div class="card-topline">
+            <span class="status planned">Planned</span>
+            <span class="card-code">003</span>
+          </div>
+          <h3>Puzzle Game</h3>
+          <p>A compact game slot for experimenting with scoring, saved progress, and abuse-resistant leaderboards.</p>
+        </article>
+
+        <article class="game-card">
+          <div class="card-topline">
+            <span class="status planned">Planned</span>
+            <span class="card-code">004</span>
+          </div>
+          <h3>Arcade Game</h3>
+          <p>A lightweight browser game area for input handling, sessions, accessibility, and performance polish.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="roadmap" aria-labelledby="roadmap-title">
+      <div>
+        <p class="section-kicker">Roadmap</p>
+        <h2 id="roadmap-title">Next Platform Milestones</h2>
+      </div>
+      <ol>
+        <li>Create the shared site shell and placeholder library.</li>
+        <li>Add game pages one at a time without coupling their behavior to the homepage.</li>
+        <li>Introduce authentication, user profiles, and secure session handling.</li>
+        <li>Add deployment, logging, tests, and a short security write-up for recruiters.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Juan Reyes as a web game and cybersecurity portfolio.</p>
+    <a href="#">Back to top</a>
+  </footer>
+</body>
+</html>
