@@ -16,8 +16,11 @@ The project currently contains the first static placeholder page:
 
 - `index.html` for the main page structure.
 - `about.html` for the project background and security goals.
+- `auth.html` and `auth.js` for the first registration and login UI.
 - `styles.css` for the visual design.
 - `assets/cyber-game-hub-hero.png` for the homepage hero artwork.
+- `auth-service/` for the containerized authentication API.
+- `docker-compose.yml` for running the auth service with a SQLite volume.
 
 No specific games are implemented yet.
 
@@ -39,4 +42,12 @@ This repository is meant to separate general platform work from game-specific wo
 
 ## Running Locally
 
-For now, open `index.html` directly in a browser. Once the project adds a build tool, backend, or authentication service, this section should be updated with the development server commands.
+For the static pages, open `index.html` directly in a browser.
+
+To run the authentication service:
+
+```bash
+docker compose up --build auth-service
+```
+
+The auth API listens on `http://127.0.0.1:8001` and stores SQLite data in the `auth_data` Docker volume.

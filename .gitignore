@@ -1,0 +1,4 @@
+*.sqlite3
+auth-service/data/
+__pycache__/
+*.pyc

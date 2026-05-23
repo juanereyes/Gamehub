@@ -1,0 +1,15 @@
+services:
+  auth-service:
+    build:
+      context: ./auth-service
+    ports:
+      - "8001:8001"
+    environment:
+      AUTH_PORT: "8001"
+      DATABASE_PATH: /data/auth.sqlite3
+      CORS_ALLOWED_ORIGIN: "*"
+    volumes:
+      - auth_data:/data
+
+volumes:
+  auth_data:
