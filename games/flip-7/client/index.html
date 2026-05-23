@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip 7 | GameHub</title>
+  <meta name="description" content="Flip 7 game module for GameHub.">
+  <link rel="stylesheet" href="../../../styles.css">
+  <link rel="stylesheet" href="flip-7.css">
+  <script src="../../../site-auth.js" defer></script>
+  <script src="flip-7.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../../index.html" aria-label="GameHub home">
+      <span class="brand-mark">GH</span>
+      <span>GameHub</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../../../index.html#games">Games</a>
+      <a href="../../../about.html">About the Site</a>
+      <a href="../../../index.html#roadmap">Roadmap</a>
+      <a href="../../../auth.html" data-auth-nav>Sign In</a>
+    </nav>
+  </header>
+
+  <main class="f7-client-shell" data-game-client="flip-7">
+    <section class="f7-table" aria-labelledby="f7-title">
+      <div class="f7-copy">
+        <p class="section-kicker">Game 002</p>
+        <h1 id="f7-title">Flip 7</h1>
+        <p>
+          This is the contained client surface for F7. The game UI, browser state, and future calls to the F7 service stay inside this module rather than the shared GameHub page.
+        </p>
+      </div>
+
+      <div class="f7-panel" aria-label="Flip 7 game status">
+        <div class="f7-panel-header">
+          <span class="status playable">Client ready</span>
+          <span class="card-code">F7</span>
+        </div>
+        <h2>Round Lobby</h2>
+        <p id="f7-status">Waiting for the Flip 7 server module to be connected.</p>
+        <div class="f7-card-row" aria-label="Sample Flip 7 cards">
+          <span class="f7-card">1</span>
+          <span class="f7-card">3</span>
+          <span class="f7-card accent">7</span>
+          <span class="f7-card">10</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

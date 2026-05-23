@@ -1,0 +1,86 @@
+.f7-client-shell {
+  min-height: calc(100vh - 76px);
+  background:
+    linear-gradient(135deg, rgba(228, 102, 102, 0.1), transparent 34%),
+    linear-gradient(180deg, #101416 0%, #1b191e 100%);
+}
+
+.f7-table {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 520px);
+  gap: clamp(28px, 6vw, 76px);
+  min-height: calc(100vh - 76px);
+  padding: clamp(54px, 8vw, 110px) clamp(20px, 5vw, 72px);
+  align-items: center;
+}
+
+.f7-copy {
+  max-width: 760px;
+}
+
+.f7-copy h1 {
+  max-width: 780px;
+}
+
+.f7-copy p:last-child {
+  max-width: 680px;
+  color: #d6d7cf;
+  font-size: 1.08rem;
+}
+
+.f7-panel {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(22, 29, 32, 0.92);
+  box-shadow: var(--shadow);
+}
+
+.f7-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 34px;
+}
+
+.f7-panel h2 {
+  margin-bottom: 14px;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.f7-panel p {
+  color: var(--muted);
+}
+
+.f7-card-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(54px, 1fr));
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.f7-card {
+  display: grid;
+  aspect-ratio: 0.72;
+  place-items: center;
+  border: 1px solid rgba(228, 102, 102, 0.52);
+  border-radius: 8px;
+  background: #f4f1e8;
+  color: #141615;
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+
+.f7-card.accent {
+  border-color: rgba(72, 214, 194, 0.72);
+  background: #132326;
+  color: var(--teal);
+}
+
+@media (max-width: 880px) {
+  .f7-table {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+}

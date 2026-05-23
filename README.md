@@ -22,6 +22,8 @@ The project currently contains the first static placeholder page:
 - `auth-service/` for the containerized authentication API.
 - `games/liars-dice/client/` for the first isolated game client route.
 - `games/liars-dice/server/` for the future isolated Liar's Dice server module.
+- `games/flip-7/client/` for the second isolated game client route.
+- `games/flip-7/server/` for the future isolated Flip 7 server module.
 - `docker-compose.yml` for running the auth service with a SQLite volume.
 
 No specific games are implemented yet.
