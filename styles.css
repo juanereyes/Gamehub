@@ -415,11 +415,19 @@ h3 {
 }
 
 .game-card {
+  display: flex;
+  flex-direction: column;
   min-height: 230px;
   padding: 20px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: linear-gradient(180deg, rgba(244, 241, 232, 0.07), rgba(244, 241, 232, 0.03));
+}
+
+.featured-game {
+  border-color: rgba(72, 214, 194, 0.42);
+  background:
+    linear-gradient(180deg, rgba(72, 214, 194, 0.12), rgba(244, 241, 232, 0.03));
 }
 
 .game-card p,
@@ -448,6 +456,16 @@ h3 {
 .status.planned {
   background: rgba(243, 179, 93, 0.15);
   color: var(--amber);
+}
+
+.status.playable {
+  background: rgba(72, 214, 194, 0.15);
+  color: var(--teal);
+}
+
+.game-card-action {
+  width: fit-content;
+  margin-top: auto;
 }
 
 .card-code,

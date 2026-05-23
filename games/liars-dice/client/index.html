@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liar's Dice | GameHub</title>
+  <meta name="description" content="Liar's Dice game module for GameHub.">
+  <link rel="stylesheet" href="../../../styles.css">
+  <link rel="stylesheet" href="liars-dice.css">
+  <script src="../../../site-auth.js" defer></script>
+  <script src="liars-dice.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../../index.html" aria-label="GameHub home">
+      <span class="brand-mark">GH</span>
+      <span>GameHub</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../../../index.html#games">Games</a>
+      <a href="../../../about.html">About the Site</a>
+      <a href="../../../index.html#roadmap">Roadmap</a>
+      <a href="../../../auth.html" data-auth-nav>Sign In</a>
+    </nav>
+  </header>
+
+  <main class="ld-client-shell" data-game-client="liars-dice">
+    <section class="ld-table" aria-labelledby="ld-title">
+      <div class="ld-copy">
+        <p class="section-kicker">Game 001</p>
+        <h1 id="ld-title">Liar's Dice</h1>
+        <p>
+          This is the contained client surface for LD. The game UI, client state, and future server calls will live inside this module instead of the shared GameHub page.
+        </p>
+      </div>
+
+      <div class="ld-panel" aria-label="Liar's Dice game status">
+        <div class="ld-panel-header">
+          <span class="status playable">Client ready</span>
+          <span class="card-code">LD</span>
+        </div>
+        <h2>Table Lobby</h2>
+        <p id="ld-status">Waiting for the Liar's Dice server module to be connected.</p>
+        <div class="ld-dice-row" aria-label="Sample dice">
+          <span class="ld-die">1</span>
+          <span class="ld-die">3</span>
+          <span class="ld-die">4</span>
+          <span class="ld-die">4</span>
+          <span class="ld-die">6</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

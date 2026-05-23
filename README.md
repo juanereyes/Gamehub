@@ -20,6 +20,8 @@ The project currently contains the first static placeholder page:
 - `styles.css` for the visual design.
 - `assets/cyber-game-hub-hero.png` for the homepage hero artwork.
 - `auth-service/` for the containerized authentication API.
+- `games/liars-dice/client/` for the first isolated game client route.
+- `games/liars-dice/server/` for the future isolated Liar's Dice server module.
 - `docker-compose.yml` for running the auth service with a SQLite volume.
 
 No specific games are implemented yet.
@@ -39,6 +41,8 @@ No specific games are implemented yet.
 ## Development Approach
 
 This repository is meant to separate general platform work from game-specific work. General site features, navigation, authentication, shared styling, deployment, and security documentation can be handled here. Individual game behavior can be built separately and integrated back into the shared GameHub shell.
+
+Each game should keep its browser client and backend service in its own game folder. Shared pages can link into a game, but game-specific state, UI behavior, rules, and server validation should stay inside that game's module.
 
 ## Running Locally
 
